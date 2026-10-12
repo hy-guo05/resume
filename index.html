@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="郭慧怡的在线简历 - 对日业务相关实习生">
+  <title>郭慧怡 | 简历</title>
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --card: #ffffff;
+      --text: #2c3e50;
+      --muted: #6b7c8e;
+      --accent: #2563eb;
+      --line: #e4e9f0;
+      --shadow: 0 12px 32px rgba(30, 41, 59, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 44px 48px;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      color: #fff;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid rgba(255, 255, 255, 0.25);
+      flex-shrink: 0;
+      background: #fff;
+    }
+
+    .intro h1 {
+      margin: 0 0 6px 0;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .intro .title {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .intro .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      font-size: 15px;
+      color: #e2e8f0;
+    }
+
+    .intro .contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    main {
+      padding: 42px 48px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 10px;
+      margin: 0 0 18px 0;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .item-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .item-meta {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .intent {
+      background: #eff6ff;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      font-weight: 500;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .skills-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .skills-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .self-evaluation {
+      color: var(--muted);
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 48px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        margin: 0;
+        border-radius: 0;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 24px;
+      }
+
+      .avatar {
+        width: 88px;
+        height: 110px;
+      }
+
+      main {
+        padding: 28px 24px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <img src="photo.jpg" alt="郭慧怡" class="avatar">
+      <div class="intro">
+        <h1>郭慧怡</h1>
+        <div class="title">对日业务相关实习生</div>
+        <div class="contact">
+          <span>联系电话：18241706234</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>求职意向</h2>
+        <div class="intent">对日业务相关实习生</div>
+      </section>
+
+      <section>
+        <h2>教育背景</h2>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">大学</span>
+            <span class="item-meta">在读</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>实践经历</h2>
+
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">小学生家教</span>
+            <span class="item-meta">大二上暑假 · 大二下寒假</span>
+          </div>
+          <p>积累“将复杂问题简单化”的表达技巧，验证责任心。</p>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">手工店销售</span>
+            <span class="item-meta">大一上寒假</span>
+          </div>
+          <p>在手工店实习期间，主动对接周边舞蹈课家长群体，15天内为20+潜在客户详细介绍产品特点，成功促成3个长期订单。</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>个人技能</h2>
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">自主语言能力提升项目</span>
+            <span class="item-meta">2025.09 - 至今</span>
+          </div>
+        </div>
+        <ul class="skills-list">
+          <li>目标驱动：为切入对日业务领域，自主制定并执行每日3-4小时的日语高强度学习计划，2个月内系统掌握N5阶段全部核心语法与800+高频词汇。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>自我评价</h2>
+        <p class="self-evaluation">一名具备极强学习耐力和执行力的准职场人。深知语言是工具而非目的，坚实踏实是最快的路径，渴望在对日业务一线通过处理数据、文档、客户支持等基础任务，为团队创造实实在在的价值，并实现自我快速成长。</p>
+      </section>
+    </main>
+
+    <footer>
+      本简历同时提供 <a href="郭慧怡_简历.docx" download>Word 版下载</a> ·
+      <a href="https://github.com/hy-guo05/resume" target="_blank" rel="noopener">GitHub 仓库</a>
+    </footer>
+  </div>
+</body>
+</html>
